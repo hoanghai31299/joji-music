@@ -1,0 +1,23 @@
+.tours {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.tour {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tour .date {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.tour .date span:first-child {
+  font-weight: 700;
+  font-size: 1.2rem;
+}

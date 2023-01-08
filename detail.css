@@ -1,0 +1,148 @@
+.top-product {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.product-image img {
+  width: 100%;
+  height: 100%;
+}
+.product-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-image {
+  padding: 50px;
+}
+.list-image {
+  display: flex;
+  gap: 40px;
+}
+
+.list-image .selected {
+  border: 1px solid white;
+  padding: 10px;
+}
+.size span {
+  display: block;
+}
+.list-image img {
+  width: 150px;
+}
+
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  gap: 40px;
+}
+
+.product-detail .name {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.product-detail .price {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.product-detail select {
+  width: 200px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  padding: 0 10px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.product-detail select:focus {
+  outline: none;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+}
+
+.quantity button {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-minus {
+  border-radius: 50px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.btn-plus {
+  border-radius: 50px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.quantity input {
+  width: 70px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  border: none;
+  text-align: center;
+  border: none;
+}
+
+.quantity input:focus {
+  outline: none;
+}
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
+.action {
+  margin-top: 100px;
+  text-transform: uppercase;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.action .btn-notify {
+  background-color: rgb(247, 233, 215);
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.product .product-image {
+  padding: 20px;
+}
+
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 15px;
+}
+
+.product-detail .name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.also-like {
+  margin-top: 100px;
+}
+.also-like .title {
+  font-size: 24px;
+}

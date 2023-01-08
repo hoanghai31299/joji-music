@@ -1,0 +1,58 @@
+.albums {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.album {
+  display: flex;
+}
+.image {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  border: 5px solid white;
+  overflow: hidden;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease all;
+}
+.image:hover img {
+  transform: scale(1.3);
+}
+.album .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.detail {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.songs {
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.song {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+}
+
+.albums .album:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.song:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
